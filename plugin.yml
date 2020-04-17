@@ -1,0 +1,11 @@
+name: SpaceAPI
+main: jogar.space.rankapi.ranks.SpaceAPI
+version: 0.1
+author: Plugner
+commands:
+ fakename:
+ fake:
+ rank:
+ punir:
+ report:
+ reports:
