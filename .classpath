@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="C:/Users/João Rodrigo/Downloads/NickAPI.jar"/>
 	<classpathentry kind="lib" path="C:/Users/João Rodrigo/Downloads/APILibs/ProtocolLib.jar"/>
 	<classpathentry kind="lib" path="C:/Users/João Rodrigo/Downloads/TTA-4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/João Rodrigo/Downloads/APILibs/AtlasFactions.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -13,6 +13,7 @@ import org.bukkit.scoreboard.Team;
 
 import com.comphenix.protocol.ProtocolLib;
 import com.comphenix.protocol.ProtocolManager;
+import com.factions.atlasfactions.AtlasAPI;
 
 import jogar.space.rankapi.ranks.SpaceAPI;
 
@@ -49,8 +50,19 @@ public class TabList {
 				con.close();
 				return;
 			}else{
-				t_jogador.setPrefix(prefix);
+				if(Bukkit.getPluginManager().getPlugin("AtlasFactions") !=null) {
+					if(AtlasAPI.getFactionGalaxyUser(t_jogador.getName()).getFaction() == null) {
+						
+					}else{
+						t_jogador.setPrefix(prefix + " §7[" + AtlasAPI.getFactionGalaxyUser(t_jogador.getName()).getFaction().getTag());
+						t_jogador.addPlayer(p);
+						con.close();
+						return;
+					}
+					
+				}
 				
+				t_jogador.setPrefix(prefix);
 				t_jogador.addPlayer(p);
 				con.close();
 			}
